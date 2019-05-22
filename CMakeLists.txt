@@ -7,6 +7,7 @@ set(CMAKE_C_STANDARD 90)
 include_directories(core)
 include_directories(core/lib)
 include_directories(cpu/msp430)
+include_directories(platform/sky)
 
 # set project files
 set(DEV_PROJECT_PATH project)

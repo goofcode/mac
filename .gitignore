@@ -132,3 +132,4 @@ LOG_OPENOCD
 
 # CLion files
 .idea
+cmake-build-debug
