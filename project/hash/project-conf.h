@@ -1,0 +1,24 @@
+#ifndef __PROJECT_CONF_H__
+#define __PROJECT_CONF_H__
+
+/* Netstack layers */
+#undef NETSTACK_CONF_MAC
+#define NETSTACK_CONF_MAC     csma_driver
+#undef NETSTACK_CONF_RDC
+#define NETSTACK_CONF_RDC     nullrdc_driver
+#undef NETSTACK_CONF_FRAMER
+#define NETSTACK_CONF_FRAMER  framer_802154
+
+/* IEEE802.15.4 frame version */
+//#undef FRAME802154_CONF_VERSION
+//#define FRAME802154_CONF_VERSION FRAME802154_IEEE802154E_2012
+
+/* IEEE802.15.4 PANID */
+#undef IEEE802154_CONF_PANID
+#define IEEE802154_CONF_PANID 0xabcd
+
+//#if CONTIKI_TARGET_COOJA
+//#define COOJA_CONF_SIMULATE_TURNAROUND 0
+//#endif /* CONTIKI_TARGET_COOJA */
+
+#endif /* __PROJECT_CONF_H__ */
